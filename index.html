@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body class="center-elements">
+
+  <main class="center-elements">
+    <div class="content-container">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.</p>
+    </div>
+    <section class="center-elements">
+      <button class="purple-btn">
+        <p><span class="bold-text">Try it free 7 days</span> then $20/mo. thereafter</p>
+      </button>
+      <form action="" id="accountRegisterForm">
+        <div class="input-container">
+          <input type="text" id="fname" onfocus="this.placeholder=''" name="fname" onblur="this.placeholder='First Name'" placeholder="First Name">
+          <p class="hide">First Name cannot be empty</p>
+          <br>
+        </div>
+        <div class="input-container">
+          <input type="text" id="lname" name="lname" onfocus="this.placeholder=''" onblur="this.placeholder='Last Name'" placeholder="Last Name">
+          <p class="hide">Last Name cannot be empty</p>
+          <br>
+        </div>
+        <div class="input-container">
+          <input type="text" id="email" name="email" onfocus="this.placeholder=''" onblur="this.placeholder='Email Address'" placeholder="Email Address">
+          <p class="hide">Looks like this is not an email</p>
+          <br>
+        </div>
+        <div class="input-container">
+          <input type="password" id="password" name="password" onfocus="this.placeholder=''" onblur="this.placeholder='Password'" placeholder="Password">
+          <p class="hide">Password cannot be empty</p>
+          <br>
+        </div>
+        <input type="submit" value="CLAIM YOUR FREE TRIAL">
+        <p>By clicking the button, you are agreeing to our <span class="red-text bold-text">Terms and Services</span></p>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
